@@ -1,0 +1,58 @@
+@media all and (max-width: 768px) {
+  .education-list__items,
+  .education-tasks__items {
+    width: 50%;
+  }
+  .header__items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 50px;
+    height: 200px;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px;
+    box-shadow: -1px 5px 13px -3px black;
+    &.dropdown-open {
+      display: flex;
+    }
+  }
+  .header__button.dropdown-toggler {
+    display: inline-block;
+  }
+
+  .leaderboard__scroll {
+    padding-bottom: 50px;
+  }
+
+  .login-form {
+    width: 300px;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .education {
+    flex-direction: column;
+
+    &-list__items,
+    &-tasks__items {
+      width: calc(100% - 10px);
+      margin-left: 5px;
+    }
+  }
+  .not-found-text {
+    font-size: 15px;
+  }
+
+  .login-form {
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .logo {
+    font-size: 20px;
+  }
+}

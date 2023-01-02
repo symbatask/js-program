@@ -1,0 +1,9 @@
+.link-history {
+  padding: 15px 0 0 15px;
+  &__link {
+    color: #3182ce;
+    &:hover {
+      color: #2b6cb0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.lesson {
+  padding: 15px;
+  &__title {
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #d97b7b !important;
+  }
+  &__link {
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    border: 1px solid #a7a5a5;
+    cursor: pointer;
+  }
+  &__links {
+    display: flex;
+  }
+  &__link.next {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

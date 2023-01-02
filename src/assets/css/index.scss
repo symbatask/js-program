@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.login-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg-min.jpg") no-repeat center center/cover;
+}
+
+.login-wrapper:before {
+  background-blend-mode: darken;
+  background: #1116;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.login-btn {
+  padding: 10px;
+  margin: 0 0 0 auto;
+  width: 100px;
+  background-blend-mode: darken;
+  background: #0003;
+  color: #ffff;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #000;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  background: #000;
+}
+
+.login-form {
+  width: 30%;
+  min-width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.login-form input {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
+.login-form input:focus {
+  background: #fff;
+}
+
+.not-found {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.not-found-img {
+  max-width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+}
+
+.not-found-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.editor-wrapper pre,
+.editor-wrapper textarea{
+  padding-left: 40px !important;
+}
+
+.token-line:before {
+  position: absolute;
+  left: 10px;
+  counter-increment: line;
+  content: counter(line) ":";
+}
+
+.close-card {
+  cursor: default;
+}
+
+@import "media";
